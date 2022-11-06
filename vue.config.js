@@ -7,7 +7,7 @@ module.exports = defineConfig({
     }
   },
   chainWebpack: config => config.plugin('html').tap(args => {
-    args[0].title = "Government Reconciliation Efforts: Could They Be Doing More?"
+    args[0].title = "Government Reconciliation Efforts: Could They Be Doing More? | NewsWeb.Site"
     return args
   })
 })

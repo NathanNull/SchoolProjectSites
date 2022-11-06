@@ -1,4 +1,4 @@
-# covid-misinf
+# inq11
 
 ## Project setup
 ```

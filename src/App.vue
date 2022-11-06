@@ -1,30 +1,24 @@
 <template>
   <div class="d-flex">
-    <!-- For the laptop, to tell people where to go to find the site -->
-    <div class="d-none d-md-flex bg-black text-white content justify-content-center align-items-center">
-        <h1>
-            Go to http://{{ getHost() }} on your phone to see the website<br />
-        </h1>
-    </div>
     <!-- For the phones, to display the website -->
-    <div class="d-md-none">
+    <div>
         <fake-navbar />
     </div>
-    <div class="grid d-md-none container content">
-        <display />
+    <div class="grid container-fluid content text-center mx-4">
+        <display-element />
     </div>
   </div>
 </template>
 
 <script>
 import FakeNavbar from "./components/FakeNavbar.vue";
-import Display from "./components/Display.vue";
+import DisplayElement from "./components/DisplayElement.vue";
 
 export default {
     name: "App",
     components: {
         FakeNavbar,
-        Display,
+        DisplayElement,
     },
     methods: {
         getHost() {
